@@ -1272,26 +1272,55 @@ dependencies = [
 ]
 
 [[package]]
+name = "easytier-ohos-core"
+version = "0.1.0"
+dependencies = [
+ "async-trait",
+ "easytier",
+ "easytier-core",
+ "ipnet",
+ "once_cell",
+ "serde",
+ "serde_json",
+ "tokio",
+ "url",
+]
+
+[[package]]
+name = "easytier-ohos-features"
+version = "0.1.0"
+dependencies = [
+ "base64 0.22.1",
+ "easytier",
+ "flate2",
+ "gethostname 1.1.0",
+ "once_cell",
+ "prost-reflect",
+ "rusqlite",
+ "serde",
+ "serde_json",
+ "tracing",
+ "url",
+ "uuid",
+]
+
+[[package]]
 name = "easytier-ohrs"
 version = "0.1.0"
 dependencies = [
  "anyhow",
  "async-trait",
- "base64 0.22.1",
  "bytes",
  "easytier",
  "easytier-core",
+ "easytier-ohos-core",
+ "easytier-ohos-features",
  "easytier-proto",
- "flate2",
  "futures",
- "gethostname 1.1.0",
- "ipnet",
  "napi-build-ohos",
  "napi-derive-ohos",
  "napi-ohos",
  "once_cell",
- "prost-reflect",
- "rusqlite",
  "serde",
  "serde_json",
  "tokio",
